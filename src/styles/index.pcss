@@ -1,0 +1,22 @@
+:root {
+    --colour: #00ffd5;
+}
+
+html, body { 
+    background-color: antiquewhite;
+}
+
+@svg-load nav url('../images/square.svg') {
+    path:nth-child(1) {
+        fill: var(--colour);
+    }
+}
+
+.nav {
+    width: 200px;
+    height: 200px;
+    background: svg-inline(nav) no-repeat center;
+      a {
+        color: blue;
+    }
+}
